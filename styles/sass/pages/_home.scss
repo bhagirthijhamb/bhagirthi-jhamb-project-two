@@ -1,0 +1,146 @@
+
+nav {
+    display: flex;
+}
+
+
+
+.logo,
+.top-bar ul {
+    flex: 1 0 50%;
+}
+
+.hamburger-menu {
+    visibility: hidden;
+}
+
+
+
+// ---------------------------------
+
+// About Section
+
+.recipes,
+.menu {    
+    display: flex;
+    
+}
+
+.recipes {
+    flex-direction: row-reverse;
+    
+}
+
+.menu {
+    flex-direction: row;
+    
+}
+
+.recipes-image,
+.recipes-intro,
+.menu-image,
+.menu-list {
+    flex: 1 1 50%;
+}
+
+.menu-list {
+    padding: 10px;
+}
+
+.menu-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    // align-content: space-around;
+}
+
+.menu-list ul li {
+    flex: 1 1 50%;
+    text-align: left;
+}
+// ----------------------------------------
+// Our Restaurant Section
+//-----------------------------------------
+
+.our-restaurants {
+	max-width: 600px;
+    margin: 0 auto;
+    
+    .images {
+        position: relative;
+    }
+
+    .circle-text-image {
+        position: absolute;
+        width: 200px;
+        top: -100px;
+        right: -100px;
+    }
+}
+
+// ----------------------------
+// Gallery
+// -----------------------------
+
+.gallery ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    // align-content: space-around;
+}
+
+.gallery ul li {
+    flex: 1 1 33.33%;
+}
+
+// --------------------------------------
+// Hungry Client
+// ----------------------------------------
+
+.testimonial {
+    background-color: $color-dark-green;
+    
+}
+
+.testimonial-center {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+// --------------------------------------
+// Footer
+// ----------------------------------------
+footer {
+    background: $color-black;
+    color: $color-white;
+}
+
+.footer-center {    
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.delicious-contact,
+.recent-posts,
+.subscribe {
+      flex: 1 1 25%; 
+
+      display: flex;
+      flex-direction: column;
+}
+
+.recent-posts {
+    margin: 0 20px;
+    align-items: flex-start;
+}
+
+.recent-posts ul li {
+    text-align: left;
+    color: inherit;
+}

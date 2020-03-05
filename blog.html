@@ -10,40 +10,46 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/1383680287.js" crossorigin="anonymous"></script>
     <!-- Style -->
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     </link>
     <title>Delicious</title>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <!-- Logo -->
-        <h1>Delicious</h1>
-        <!-- Nav -->
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Recipes</a></li>
-                <li><a href="">Nutrition</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
-                <li><a href=""><i class="fas fa-search"></i></a></li>
-            </ul>
-        </nav><!-- Nav ends -->
-
-        <!-- Hamburger Menu icon -->
-        <a href="#" class="hamburger-menu"><i class="fa fa-bars "></i></a><!-- Hamburger Menu icon -->
+    <header class="header-blog">
+        <!-- Header wrapper -->
+        <div class="wrapper">
+        
+            <!-- Navigation of site -->
+            <nav class="top-bar">
+                <!-- Logo -->
+                <h2 class="logo">Delicious</h1>
+        
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Recipes</a></li>
+                    <li><a href="">Nutrition</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                </ul>
+            </nav><!-- Nav ends -->
+        
+            <!-- Hamburger Menu icon -->
+            <a href="#" class="hamburger-menu"><i class="fa fa-bars "></i></a><!-- Hamburger Menu icon -->
+        </div><!-- Header wrapper ends -->
     </header><!-- Header ends -->
 
     <!-- Main -->
     <main>
+        <div class="wrapper">
         <!-- Blog content Section -->
         <section class="blog">
             <div class="blog-recipe">
-                <h2>Pineapple Chicken</h2>
+                <h1>Pineapple Chicken</h1>
                 <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iste voluptatem distinctio doloribus mollitia laborum
@@ -67,7 +73,7 @@
         <!-- Blog Tags & Share Section -->
         <section class="blog-tags-share">
                 <p><span>Tags:</span> Recipes, Chicken, Pineapple, Mexican</p>
-                <p><span>Share:</span></p>
+                <p><span>Share:</span><span><i class="fab fa-facebook-f"></i></span><span><i class="fab fa-twitter"></i></span><span><i class="fab fa-instagram"></i></span></p>
         </section><!-- Blog Tags & Share Section ends-->
 
         <!-- Author Section -->
@@ -83,6 +89,9 @@
 
         <!-- Related Posts Section -->
         <section class="related-posts">
+            <div class="wrapper">
+            <h3>Related Posts</h3>
+            <div class="posts">
             <div class="post-1">
                 <img src="./delicious-assets/blog-3.jpeg" alt="">
                 <h4>How to bake the perfect cake</h4>
@@ -96,32 +105,34 @@
             </div>
 
             <div class="post-3">
-                <img src="./delicious-assets/blog-4.jpeg" alt="">
+                <img src="./delicious-assets/blog-5.jpeg" alt="">
                 <h4>Single post with image</h4>
                 <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
+            </div>
+            </div>
             </div>
         </section><!-- Related Posts Section ends -->
 
         <!-- Comments Section -->
         <section class="comments">
-            <h4>02 comments</h4>
+            <h3>02 comments</h3>
             <div class="comment-1">
-                <div class="comment-1-image">
+                <div class="comment-image">
                     <img src="./delicious-assets/blog-6.jpeg" alt="">
                 </div>
-                <div class="comment-1-text">
-                    <h5>Lucatony Avaro - Web developer</h5>
+                <div class="comment-text">
+                    <h4>Lucatony Avaro - Web developer</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque sapiente deleniti omnis expedita numquam!</p>
                     <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
                 </div>
             </div>
 
             <div class="comment-2">
-                <div class="comment-2-image">
+                <div class="comment-image">
                     <img src="./delicious-assets/blog-7.jpeg" alt="">
                 </div>
-                <div class="comment-2-text">
-                    <h5>Brian Hudson - Web developer</h5>
+                <div class="comment-text">
+                    <h4>Brian Hudson - Web developer</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque sapiente deleniti omnis expedita
                         numquam!</p>
                     <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
@@ -150,52 +161,59 @@
                 </form>
             </section>
         </section><!-- Comments Section ends -->
-
+        </div>
 
 
     </main><!-- Main ends-->
 
     <!-- Footer -->
     <footer>
-        <div class="delicious-contact">
-            <h3>Delicious</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum mollitia ab corporis temporibus deleniti consectetur esse rerum.</p>
-            <address>
-
-            </address>
-
-            <p>yum@food.com</p>
-            <p>-1 234 56789</p>
-                
-        </div>
-
-        <div class="recent-posts">
-            <ul>
-                <li><a href="">Beetroot spinach okra water</a></li>
-                <li><a href="">Chestnut ricebean pae catsearcourgette</a></li>
-                <li><a href="">Summer purslane spinacharugula pea</a></li>
-                <li><a href="">Tatsoi aubergine spring onion bush</a></li>
-                <li><a href="">Tomato kale radicchio turnip chicory</a></li>
-                <li><a href="">Salsify pea sprouts fava bean</a></li>
-            </ul>
-        </div>
-
-        <div class="subscribe">
-            <p>Get all of our newest recipes immediately in your inbox.</p>
-            <form action="">
-                <input type="email">
-                <button></button>
-            </form>
-
-            <div class="social-icons">
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </div>
-        </div>
-
+        <div class="wrapper">
+            <div class="footer-center">
+                <!-- Contact -->
+                <div class="delicious-contact">
+                    <h3>Delicious</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum mollitia ab corporis temporibus
+                        deleniti consectetur esse rerum.</p>
+                    <address>
+    
+                    </address>
+    
+                    <p>yum@food.com</p>
+                    <p>-1 234 56789</p>
+    
+                </div><!-- Contact ends -->
+    
+                <!-- Recent Posts -->
+                <div class="recent-posts">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li><a href="">Beetroot spinach okra water</a></li>
+                        <li><a href="">Chestnut ricebean pae catsearcourgette</a></li>
+                        <li><a href="">Summer purslane spinacharugula pea</a></li>
+                        <li><a href="">Tatsoi aubergine spring onion bush</a></li>
+                        <li><a href="">Tomato kale radicchio turnip chicory</a></li>
+                        <li><a href="">Salsify pea sprouts fava bean</a></li>
+                    </ul>
+                </div><!-- Recent Posts ends -->
+    
+                <!-- Subscribe Now-->
+                <div class="subscribe">
+                    <p>Get all of our newest recipes immediately in your inbox.</p>
+                    <form action="">
+                        <input type="email">
+                        <button type="submit"> Send Message <span><i
+                                    class="far fa-long-arrow-alt-right"></i></span></button>
+                    </form>
+    
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                </div><!-- Subscribe Now ends-->
     </footer><!-- Footer ends -->
     
 </body>

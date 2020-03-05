@@ -1,0 +1,24 @@
+header {
+     background-position: 50% 50%;
+    background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    background-size: cover;
+
+    width: 100%;
+    min-height: 100vh;
+    // height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-home {    
+    background-image: url('../delicious-assets/home-1.jpeg');
+}
+
+.header-blog {
+    background-image: url('../delicious-assets/blog-1.jpeg');    
+}
+
+.header-contact {
+    background-image: url('../delicious-assets/contact-1.jpeg');    
+}

@@ -6,195 +6,215 @@
     <!-- Skip Link -->
     <a href="#maincontent" class="skip-link">Skip to main content.</a>
     <!-- google fonts -->
-    
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Raleway:700&display=swap" rel="stylesheet"> 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/1383680287.js" crossorigin="anonymous"></script>
     <!-- Style -->
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     </link>
     <title>Delicious</title>
 </head>
 <body>
+            <!-- flexItem {
+            flex: 0 1 200px;
+            flex: 0 1 50%;
+        } -->
 
-    <!-- flexItem {
-        flex: 0 1 200px;
-        flex: 0 1 50%;
-    } -->
+        <!-- Header -->
+        <header class="header-home">
+            <!-- Header wrapper -->
+            <div class="wrapper">
 
-    <!-- Header -->
-    <header>
-        <!-- Logo -->
-        <h1>Delicious</h1>
-        <!-- Nav -->
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Recipes</a></li>
-                <li><a href="">Nutrition</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
-                <li><a href=""><i class="fas fa-search"></i></a></li>
-            </ul>
-        </nav><!-- Nav ends -->
+            <!-- Navigation of site -->
+            <nav class="top-bar">
+                <!-- Logo -->
+                <h1 class="logo">Delicious</h1>
+                
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Recipes</a></li>
+                    <li><a href="">Nutrition</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                </ul>
+            </nav><!-- Nav ends -->
 
-        <!-- Hamburger Menu icon -->
-        <a href="#" class="hamburger-menu"><i class="fa fa-bars "></i></a><!-- Hamburger Menu icon -->
-    </header><!-- Header ends -->
+            <!-- Hamburger Menu icon -->
+            <a href="#" class="hamburger-menu"><i class="fa fa-bars "></i></a><!-- Hamburger Menu icon -->
+            </div><!-- Header wrapper ends -->
+        </header><!-- Header ends -->
 
-    <!-- Main -->
-    <main>
-        <!-- About Section -->
-        <section class="about">
-            <div class="popular-recipes">
-                <div class="popular-recipes-image">
-                    <img src="./delicious-assets/home-2.jpeg" alt="A colorful dish made out of green and purple leafy vegetable">
+        <!-- Main -->
+        <main>
+            <!-- About Section -->
+            <section class="about">
+                <div class="wrapper">
+                <div class="recipes">
+                    <div class="recipes-image">
+                        <img src="./delicious-assets/home-2.jpeg" alt="A colorful dish made out of green and purple leafy vegetable">
+                    </div>
+                    <div class="recipes-intro">
+                        <h2>Most popular recipes</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, aperiam eveniet, sit alias commodi error corporis optio dicta quam veniam assumenda esse aut earum, quasi iste in illo. Magnam, temporibus atque illum laudantium eos repellat rerum explicabo nesciunt alias officia.</p>
+                        <div class="popular-recipes-link"><a href="">View recipes</a></div>
+                    </div>                
                 </div>
-                <div class="popular-recipes-text">
-                    <h2>Most popular recipes</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, aperiam eveniet, sit alias commodi error corporis optio dicta quam veniam assumenda esse aut earum, quasi iste in illo. Magnam, temporibus atque illum laudantium eos repellat rerum explicabo nesciunt alias officia.</p>
-                    <div class="popular-recipes-link"><a href="">View recipes</a></div>
-                </div>                
+
+                <div class="menu">
+                    <div class="menu-image">
+                        <img src="delicious-assets/home-3.jpeg" alt="Delicious tacos served with lime slices">
+                    </div>
+                    <div class="menu-list">
+                        <ul>
+                            <li>
+                                <a href=""><i class="fas fa-lemon"></i> Vegetarian</a>
+                                <div class="menu-item-details">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio itaque expedita autem totam debitis animi porro. Nisi, debitis nobis!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-utensils"></i> Appetizers</a>
+                                <div class="menu-item-details">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio itaque expedita autem totam
+                                        debitis animi porro. Nisi, debitis nobis!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-coffee"></i> Deserts</a>
+                                <div class="menu-item-details">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio itaque expedita autem totam
+                                        debitis animi porro. Nisi, debitis nobis!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-glass-martini"></i> Drinks</a>
+                                <div class="menu-item-details">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio itaque expedita autem totam
+                                        debitis animi porro. Nisi, debitis nobis!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-leaf"></i></i> Salads</a>
+                                <div class="menu-item-details">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio itaque expedita autem totam
+                                        debitis animi porro. Nisi, debitis nobis!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href=""><i class="fas fa-utensil-spoon"></i> Side Dishes</a>
+                                <div class="menu-item-details">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio itaque expedita autem totam
+                                        debitis animi porro. Nisi, debitis nobis!</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </section><!-- About Section ends -->
+
+            <!-- Our Restaurants Section -->
+            <section class="our-restaurants">
+                <div class="wrapper">
+                    <div class="images">
+                <div class="our-restaurants-image">
+                    <img src="./delicious-assets/home-4.jpeg" alt="Restaurant with grey walls and brown chairs">
+                </div>
+
+                <div class="circle-text-image">
+                    <img src="./delicious-assets/home-circle-text.png" alt="">
+                </div>
+                </div>
+
+                <h2>Our Restaurants</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iste, cupiditate in aspernatur officiis ex!</p>
+
             </div>
+            </section><!-- Our Restaurants Section ends-->
 
-            <div class="menu">
-                <div class="menu-image">
-                    <img src="delicious-assets/home-3.jpeg" alt="Delicious tacos served with lime slices">
+            <!-- Gallery Section -->
+            <section class="gallery">
+                <div class="wrapper">
+                <ul>
+                    <li><img src="./delicious-assets/home-5.jpeg" alt=""></li>
+                    <li><img src="./delicious-assets/home-6.jpeg" alt=""></li>
+                    <li><img src="./delicious-assets/home-7.jpeg" alt=""></li>
+                    <li><img src="./delicious-assets/home-8.jpeg" alt=""></li>
+                    <li><img src="./delicious-assets/home-9.jpeg" alt=""></li>
+                    <li><img src="./delicious-assets/home-10.jpeg" alt=""></li>
+                </ul>
                 </div>
-                <div class="menu-text">
+            </section><!-- Gallery Section ends-->
+
+            <!-- Testimonial Section -->
+            <section class="testimonial">
+                <div class="wrapper">
+                    <div class="testimonial-center">
+                <h2>Hungry Clients</h2>
+                <blockquote> Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea
+                tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. </blockquote>
+                <i class="fas fa-angle-left"></i> <i class="fas fa-angle-right"></i>
+                </div>
+                </div>
+            </section><!-- Testimonial Section ends -->
+        </main><!-- Main ends-->
+
+        <!-- Footer -->
+        <footer>
+            <div class="wrapper">
+                <div class="footer-center">
+            <!-- Contact -->
+            <div class="delicious-contact">
+                <h3>Delicious</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum mollitia ab corporis temporibus deleniti consectetur esse rerum.</p>
+                <address>
+
+                </address>
+
+                <p>yum@food.com</p>
+                <p>-1 234 56789</p>
+                    
+            </div><!-- Contact ends -->
+
+            <!-- Recent Posts -->
+            <div class="recent-posts">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="">Beetroot spinach okra water</a></li>
+                    <li><a href="">Chestnut ricebean pae catsearcourgette</a></li>
+                    <li><a href="">Summer purslane spinacharugula pea</a></li>
+                    <li><a href="">Tatsoi aubergine spring onion bush</a></li>
+                    <li><a href="">Tomato kale radicchio turnip chicory</a></li>
+                    <li><a href="">Salsify pea sprouts fava bean</a></li>
+                </ul>
+            </div><!-- Recent Posts ends -->
+
+            <!-- Subscribe Now-->
+            <div class="subscribe">
+                <p>Get all of our newest recipes immediately in your inbox.</p>
+                <form action="">
+                    <input type="email">
+                    <button type="submit"> Send Message <span><i class="far fa-long-arrow-alt-right"></i></span></button>
+                </form>
+
+                <div class="social-icons">
                     <ul>
-                        <li>
-                            <a href=""><i class="fas fa-lemon"></i>Vegetarian</a>
-                            <div class="menu-item-details">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio itaque expedita autem totam debitis animi porro. Nisi, debitis nobis!</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-utensils"></i>Appetizers</a>
-                            <div class="menu-item-details">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio itaque expedita autem totam
-                                    debitis animi porro. Nisi, debitis nobis!</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-coffee"></i>Deserts</a>
-                            <div class="menu-item-details">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio itaque expedita autem totam
-                                    debitis animi porro. Nisi, debitis nobis!</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-glass-martini"></i>Drinks</a>
-                            <div class="menu-item-details">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio itaque expedita autem totam
-                                    debitis animi porro. Nisi, debitis nobis!</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-leaf"></i></i>Salads</a>
-                            <div class="menu-item-details">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio itaque expedita autem totam
-                                    debitis animi porro. Nisi, debitis nobis!</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href=""><i class="fas fa-utensil-spoon"></i>Side Dishes</a>
-                            <div class="menu-item-details">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio itaque expedita autem totam
-                                    debitis animi porro. Nisi, debitis nobis!</p>
-                            </div>
-                        </li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
                     </ul>
                 </div>
-            </div>
+            </div><!-- Subscribe Now ends-->
+        </footer><!-- Footer ends -->
 
-        </section><!-- About Section ends -->
-
-        <!-- Our Restaurants Section -->
-        <section class="our-restaurants">
-            <div class="our-restaurants-image">
-                <img src="./delicious-assets/home-4.jpeg" alt="Restaurant with grey walls and brown chairs">
-            </div>
-
-            <div class="our-restaurants-circle-text-image">
-                <img src="./delicious-assets/home-circle-text.png" alt="">
-            </div>
-
-            <h2>Our Restaurants</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iste, cupiditate in aspernatur officiis ex!</p>
-
-
-        </section><!-- Our Restaurants Section ends-->
-
-        <!-- Gallery Section -->
-        <section class="gallery">
-            <ul>
-                <li><img src="./delicious-assets/home-5.jpeg" alt=""></li>
-                <li><img src="./delicious-assets/home-6.jpeg" alt=""></li>
-                <li><img src="./delicious-assets/home-7.jpeg" alt=""></li>
-                <li><img src="./delicious-assets/home-8.jpeg" alt=""></li>
-                <li><img src="./delicious-assets/home-9.jpeg" alt=""></li>
-                <li><img src="./delicious-assets/home-10.jpeg" alt=""></li>
-            </ul>
-        </section><!-- Gallery Section ends-->
-
-        <!-- Testimonial Section -->
-        <section>
-            <h2>Hungry Clients</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quod in ex cupiditate dolor exercitationem dicta aperiam, eum ipsa eaque sapiente dolores earum molestias odit labore repudiandae enim totam praesentium soluta neque consectetur unde nesciunt!</p>
-            <i class="fas fa-angle-left"></i> <i class="fas fa-angle-right"></i>
-        </section><!-- Testimonial Section ends -->
-    </main><!-- Main ends-->
-
-    <!-- Footer -->
-    <footer>
-        <!-- Contact -->
-        <div class="delicious-contact">
-            <h3>Delicious</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum mollitia ab corporis temporibus deleniti consectetur esse rerum.</p>
-            <address>
-
-            </address>
-
-            <p>yum@food.com</p>
-            <p>-1 234 56789</p>
-                
-        </div><!-- Contact ends -->
-
-        <!-- Recent Posts -->
-        <div class="recent-posts">
-            <ul>
-                <li><a href="">Beetroot spinach okra water</a></li>
-                <li><a href="">Chestnut ricebean pae catsearcourgette</a></li>
-                <li><a href="">Summer purslane spinacharugula pea</a></li>
-                <li><a href="">Tatsoi aubergine spring onion bush</a></li>
-                <li><a href="">Tomato kale radicchio turnip chicory</a></li>
-                <li><a href="">Salsify pea sprouts fava bean</a></li>
-            </ul>
-        </div><!-- Recent Posts ends -->
-
-        <!-- Subscribe Now-->
-        <div class="subscribe">
-            <p>Get all of our newest recipes immediately in your inbox.</p>
-            <form action="">
-                <input type="email">
-                <button type="submit"> Send Message <span><i class="far fa-long-arrow-alt-right"></i></span></button>
-            </form>
-
-            <div class="social-icons">
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </div>
-        </div><!-- Subscribe Now ends-->
-    </footer><!-- Footer ends -->
-    <div class="legal">
-        <p>Copyrights &  ' by POLAR. All Rights Reserved</p>
+        <div class="legal">
+            <p>Copyrights &  ' by POLAR. All Rights Reserved</p>
+        </div>
+        </div>
     </div>
-    
 </body>
 </html>

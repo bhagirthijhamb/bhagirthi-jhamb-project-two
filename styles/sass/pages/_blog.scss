@@ -1,0 +1,53 @@
+.blog-recipe {
+    border-bottom: 1px solid $color-brown-grey;
+}
+
+.blog-tags-share{
+    border-bottom: 1px solid $color-brown-grey;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0;
+    border-bottom: 1px solid $color-brown-grey;
+}
+
+.related-posts {
+    border-bottom: 1px solid $color-brown-grey;
+    
+    .posts {
+        display: flex;
+        flex-direction: row;
+        margin: 0 -5rem;
+
+        .post-1,
+        .post-2,
+        .post-3 {
+            margin: 0 .5rem;
+        }
+    }
+}
+
+.comments {
+    .comment-1,
+    .comment-2 {
+        display: flex;
+        flex-direction: row;
+        margin: 0 -.25rem;
+
+        .comment-image,
+        .comment-text {
+            margin: 0 .25rem;
+        }
+
+        .comment-text h4,
+        .comment-text p {
+            margin: 0;
+        }
+
+        .comment-text {
+            background-color: $color-light-grey;
+        }
+    }
+}
