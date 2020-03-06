@@ -1,0 +1,24 @@
+.display-pic {
+    background: url('../delicious-assets/contact-2.jpeg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 60vh;    
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+}
+
+.contact-form {
+    // flex: 1 1 65%;
+    flex-basis: 65%;
+}
+
+aside {
+    // flex: 1 1 35%
+    flex-basis: 35%;
+}

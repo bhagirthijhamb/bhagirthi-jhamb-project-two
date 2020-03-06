@@ -6,7 +6,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 *, *:before, *:after {box-sizing: inherit}
 
-.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+.visually-hidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 // -------------------------------------------
 // VARIABLES
@@ -21,6 +21,8 @@ $color-brown-grey:#999999; // 153, 153, 153
 $color-black:#2E2E2E; //46, 46, 46
 $color-white:#F6F6F6; //246, 246, 246
 $color-black-two:#333333; //51, 51, 51
+
+$width-wrapper-center:800px;
 
 
 // -----------------------------------------------
@@ -44,6 +46,11 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     padding: .6rem 4.5rem;
+}
+
+.container {
+    max-width: $width-wrapper-center;
+    margin: 0 auto;
 }
 
 

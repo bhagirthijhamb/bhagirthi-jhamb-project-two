@@ -38,17 +38,17 @@
                 </ul>
             </nav><!-- Nav ends -->
         
-            <!-- Hamburger Menu icon -->
-            <a href="#" class="hamburger-menu"><i class="fa fa-bars "></i></a><!-- Hamburger Menu icon -->
+
         </div><!-- Header wrapper ends -->
     </header><!-- Header ends -->
 
     <!-- Main -->
     <main>
         <div class="wrapper">
+            
         <!-- Blog content Section -->
         <section class="blog">
-            <div class="blog-recipe">
+            <div class="blog-recipe container">
                 <h1>Pineapple Chicken</h1>
                 <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
                 
@@ -71,13 +71,13 @@
         </section><!-- Blog content Section ends -->
 
         <!-- Blog Tags & Share Section -->
-        <section class="blog-tags-share">
+        <section class="blog-tags-share  container">
                 <p><span>Tags:</span> Recipes, Chicken, Pineapple, Mexican</p>
                 <p><span>Share:</span><span><i class="fab fa-facebook-f"></i></span><span><i class="fab fa-twitter"></i></span><span><i class="fab fa-instagram"></i></span></p>
         </section><!-- Blog Tags & Share Section ends-->
 
         <!-- Author Section -->
-        <section class="author">
+        <section class="author container">
             <div class="author-image">
                 <img src="./delicious-assets/blog-2.jpeg" alt="Author's pic">
             </div>
@@ -89,32 +89,33 @@
 
         <!-- Related Posts Section -->
         <section class="related-posts">
-            <div class="wrapper">
-            <h3>Related Posts</h3>
-            <div class="posts">
-            <div class="post-1">
-                <img src="./delicious-assets/blog-3.jpeg" alt="">
-                <h4>How to bake the perfect cake</h4>
-                <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
-            </div>
+            <div class="container">
+                <h3>Related Posts</h3>
 
-            <div class="post-2">
-                <img src="./delicious-assets/blog-4.jpeg" alt="">
-                <h4>Floral cupcakes</h4>
-                <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
-            </div>
+                <div class="posts">
+                    <div class="post-1">
+                        <img src="./delicious-assets/blog-3.jpeg" alt="">
+                        <h4>How to bake the perfect cake</h4>
+                        <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
+                    </div>
 
-            <div class="post-3">
-                <img src="./delicious-assets/blog-5.jpeg" alt="">
-                <h4>Single post with image</h4>
-                <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
-            </div>
-            </div>
+                    <div class="post-2">
+                        <img src="./delicious-assets/blog-4.jpeg" alt="">
+                        <h4>Floral cupcakes</h4>
+                        <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
+                    </div>
+
+                    <div class="post-3">
+                        <img src="./delicious-assets/blog-5.jpeg" alt="">
+                        <h4>Single post with image</h4>
+                        <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
+                    </div>
+                </div>
             </div>
         </section><!-- Related Posts Section ends -->
 
         <!-- Comments Section -->
-        <section class="comments">
+        <section class="comments container">
             <h3>02 comments</h3>
             <div class="comment-1">
                 <div class="comment-image">
@@ -140,36 +141,37 @@
             </div>
 
             <!-- Comment Form Section -->
-            <section>
+            <section class="comment">
                 <h3>Leave a comment</h3>
                 <p>Your email address will not be published. Required fileds are marked.</p>
 
                 <form action="">
+                    <div class="top-inputs">
                     <label for="name" class="visually-hidden">Name</label>
                     <input type="text" id="name" placeholder="Name *" required>
 
                     <label for="email" class="visually-hidden">Email</label>
                     <input type="email" id="email" placeholder="Email *" required>
 
-                    <label for="website" class="visually-hidden">Your Website</label>
+                    <label for="website"  class="visually-hidden">Your Website</label>
                     <input type="text" id="website" placeholder="Your Website">
+                    </div>
 
-                    <label for="comment" class="visually-hidden"></label>
-                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    <label for="comment"  class="visually-hidden"></label>
+                    <textarea name="comment" id="comment" cols="" rows="7">Comment</textarea>
 
                     <button type="submit">Submit Comment</button>
                 </form>
             </section>
         </section><!-- Comments Section ends -->
-        </div>
-
+        </div><!-- wrapper ends-->
 
     </main><!-- Main ends-->
 
     <!-- Footer -->
     <footer>
         <div class="wrapper">
-            <div class="footer-center">
+            <div class="footer-center container">
                 <!-- Contact -->
                 <div class="delicious-contact">
                     <h3>Delicious</h3>

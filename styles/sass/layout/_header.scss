@@ -22,3 +22,107 @@ header {
 .header-contact {
     background-image: url('../delicious-assets/contact-1.jpeg');    
 }
+
+// Shopping Bag
+
+.top-bar ul li:nth-child(8) {
+    position: relative;
+}
+
+.top-bar ul li:nth-child(8) span {
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    border-radius: 50%;
+    background: $color-light-green;
+    color: white;
+    position: absolute;
+    bottom: -4px;
+    right: -10px;   
+    line-height: 14px; 
+}
+
+// ---------------------------------------------
+
+
+// Navigation
+nav {
+    display: flex;
+}
+
+.logo,
+.top-bar ul {
+    flex: 1 0 50%;
+}
+
+#ham-label {
+  position: absolute;
+  top: -100px;
+  display: none;
+}
+
+
+@media(max-width: 900px) {
+
+  
+    .nav-items {
+        // visibility: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    ul.nav-items {
+        // display: none;
+        width: 200px;
+        visibility: hidden;
+    }
+
+        #ham-label {
+            display: block;
+        }
+
+        label.toggle-label {
+            display: initial;
+        }
+
+        .toggle-label span:after {
+            content: "\2630";
+        }
+
+        .toggle-label span {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+        }
+
+        #ham-label:checked ~ label {
+        span:after {
+            content: "\2715";
+        }
+        
+    }
+
+    #ham-label:checked ~ ul.nav-items {
+         
+            // display: block;
+            visibility: visible;
+
+            position: absolute;
+            top: 4rem;
+            right: 3rem;
+            }
+
+            ul.nav-items li {
+                background: white;
+                width: 100%;
+            }
+
+    
+
+
+}
+
+

@@ -1,23 +1,4 @@
 
-nav {
-    display: flex;
-}
-
-
-
-.logo,
-.top-bar ul {
-    flex: 1 0 50%;
-}
-
-.hamburger-menu {
-    visibility: hidden;
-}
-
-
-
-// ---------------------------------
-
 // About Section
 
 .recipes,
@@ -105,42 +86,8 @@ nav {
 }
 
 .testimonial-center {
-    width: 800px;
+    width: $width-wrapper-center;
     margin: 0 auto;
     text-align: center;
 }
 
-// --------------------------------------
-// Footer
-// ----------------------------------------
-footer {
-    background: $color-black;
-    color: $color-white;
-}
-
-.footer-center {    
-    width: 700px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.delicious-contact,
-.recent-posts,
-.subscribe {
-      flex: 1 1 25%; 
-
-      display: flex;
-      flex-direction: column;
-}
-
-.recent-posts {
-    margin: 0 20px;
-    align-items: flex-start;
-}
-
-.recent-posts ul li {
-    text-align: left;
-    color: inherit;
-}

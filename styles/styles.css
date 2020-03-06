@@ -221,7 +221,7 @@ html {
           box-sizing: inherit;
 }
 
-.visuallyhidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -249,6 +249,11 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: .6rem 4.5rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -318,6 +323,53 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
 }
 
+footer {
+  background: #2E2E2E;
+  color: #F6F6F6;
+}
+
+.footer-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.delicious-contact,
+.recent-posts,
+.subscribe {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.recent-posts {
+  margin: 0 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.recent-posts ul li {
+  text-align: left;
+  color: inherit;
+}
+
 .top-bar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,6 +408,88 @@ header {
   background-image: url("../delicious-assets/contact-1.jpeg");
 }
 
+.top-bar ul li:nth-child(8) {
+  position: relative;
+}
+
+.top-bar ul li:nth-child(8) span {
+  width: 15px;
+  height: 15px;
+  font-size: 8px;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  border-radius: 50%;
+  background: #64A604;
+  color: white;
+  position: absolute;
+  bottom: -4px;
+  right: -10px;
+  line-height: 14px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo,
+.top-bar ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
+#ham-label {
+  position: absolute;
+  top: -100px;
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  ul.nav-items {
+    width: 200px;
+    visibility: hidden;
+  }
+  #ham-label {
+    display: block;
+  }
+  label.toggle-label {
+    display: initial;
+  }
+  .toggle-label span:after {
+    content: "\2630";
+  }
+  .toggle-label span {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  #ham-label:checked ~ label span:after {
+    content: "\2715";
+  }
+  #ham-label:checked ~ ul.nav-items {
+    visibility: visible;
+    position: absolute;
+    top: 4rem;
+    right: 3rem;
+  }
+  ul.nav-items li {
+    background: white;
+    width: 100%;
+  }
+}
+
 .blog-recipe {
   border-bottom: 1px solid #999999;
 }
@@ -376,10 +510,6 @@ header {
   border-bottom: 1px solid #999999;
 }
 
-.related-posts {
-  border-bottom: 1px solid #999999;
-}
-
 .related-posts .posts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,7 +518,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0 -5rem;
+  border-bottom: 1px solid #999999;
 }
 
 .related-posts .posts .post-1,
@@ -428,21 +558,75 @@ header {
   background-color: #eee;
 }
 
-nav {
+.comments .comment form .top-inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem -.55rem;
 }
 
-.logo,
-.top-bar ul {
+.comments .comment form .top-inputs input {
+  padding: .7rem;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  margin: 0 .55rem;
 }
 
-.hamburger-menu {
-  visibility: hidden;
+@media (max-width: 900px) {
+  .comments .comment form .top-inputs input {
+    min-width: 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 80%;
+            flex: 1 1 80%;
+  }
+}
+
+.comments .comment form textarea {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 1;
+          flex: 1 1 1;
+}
+
+.display-pic {
+  background: url("../delicious-assets/contact-2.jpeg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-form {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+aside {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
 }
 
 .recipes,
@@ -544,51 +728,4 @@ nav {
   width: 800px;
   margin: 0 auto;
   text-align: center;
-}
-
-footer {
-  background: #2E2E2E;
-  color: #F6F6F6;
-}
-
-.footer-center {
-  width: 700px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.delicious-contact,
-.recent-posts,
-.subscribe {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.recent-posts {
-  margin: 0 20px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.recent-posts ul li {
-  text-align: left;
-  color: inherit;
 }
