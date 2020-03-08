@@ -239,6 +239,18 @@ html {
   font-size: 125%;
 }
 
+@media (max-width: 750px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 340px) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -248,7 +260,7 @@ body {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: .6rem 4.5rem;
+  padding: 0 4.5rem;
 }
 
 .container {
@@ -318,6 +330,7 @@ a {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 h1, h2, h3, h4, h5, a, button {
@@ -326,8 +339,15 @@ h1, h2, h3, h4, h5, a, button {
 }
 
 footer {
+  padding: 2rem 0;
   background: #2E2E2E;
   color: #c3c3c3;
+}
+
+@media (max-width: 1100px) {
+  footer {
+    padding: 1rem 0;
+  }
 }
 
 footer .footer-center {
@@ -341,8 +361,8 @@ footer .footer-center {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 28%;
-          flex: 1 1 28%;
+      -ms-flex: 1 1 90%;
+          flex: 1 1 90%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -352,6 +372,12 @@ footer h3 {
   color: #64A604;
   margin-bottom: .5rem;
   font-size: 1.2rem;
+}
+
+@media (max-width: 1100px) {
+  footer h3 {
+    margin-bottom: 0;
+  }
 }
 
 footer p, footer ul, footer address, footer a {
@@ -397,16 +423,59 @@ footer .subscribe {
           flex-direction: column;
 }
 
-footer .delicious-contact p:last-child {
+@media (max-width: 1100px) {
+  footer .delicious-contact,
+  footer .recent-posts,
+  footer .subscribe {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  footer .delicious-contact,
+  footer .recent-posts,
+  footer .subscribe {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20rem;
+            flex: 0 0 20rem;
+    -ms-flex-preferred-size: 230px;
+        flex-basis: 230px;
+  }
+}
+
+@media (max-width: 900px) {
+  footer .delicious-contact,
+  footer .recent-posts,
+  footer .subscribe {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20rem;
+            flex: 0 0 20rem;
+    -ms-flex-preferred-size: 250px;
+        flex-basis: 250px;
+  }
+}
+
+footer .delicious-contact .delicious-contact p:last-child,
+footer .recent-posts .delicious-contact p:last-child,
+footer .subscribe .delicious-contact p:last-child {
   margin-top: 0;
 }
 
-footer .recent-posts li:last-child,
-footer .delicious-contact p:last-child {
+footer .delicious-contact .recent-posts li:last-child,
+footer .delicious-contact .delicious-contact p:last-child,
+footer .recent-posts .recent-posts li:last-child,
+footer .recent-posts .delicious-contact p:last-child,
+footer .subscribe .recent-posts li:last-child,
+footer .subscribe .delicious-contact p:last-child {
   border-bottom: none;
 }
 
-footer .subscribe form {
+footer .delicious-contact .subscribe form,
+footer .recent-posts .subscribe form,
+footer .subscribe .subscribe form {
   border-bottom: 1px solid #c3c3c3;
   padding-bottom: .5rem;
   display: -webkit-box;
@@ -418,29 +487,42 @@ footer .subscribe form {
           flex-direction: row;
 }
 
-footer .subscribe form input {
+footer .delicious-contact .subscribe form input,
+footer .recent-posts .subscribe form input,
+footer .subscribe .subscribe form input {
   padding: .2rem .4rem;
   background-color: #4d4d4d;
   color: #c3c3c3;
 }
 
-footer .subscribe form input::-webkit-input-placeholder {
+footer .delicious-contact .subscribe form input::-webkit-input-placeholder,
+footer .recent-posts .subscribe form input::-webkit-input-placeholder,
+footer .subscribe .subscribe form input::-webkit-input-placeholder {
   font-size: .4rem;
 }
 
-footer .subscribe form input:-ms-input-placeholder {
+footer .delicious-contact .subscribe form input:-ms-input-placeholder,
+footer .recent-posts .subscribe form input:-ms-input-placeholder,
+footer .subscribe .subscribe form input:-ms-input-placeholder {
   font-size: .4rem;
 }
 
-footer .subscribe form input::-ms-input-placeholder {
+footer .delicious-contact .subscribe form input::-ms-input-placeholder,
+footer .recent-posts .subscribe form input::-ms-input-placeholder,
+footer .subscribe .subscribe form input::-ms-input-placeholder {
   font-size: .4rem;
 }
 
-footer .subscribe form input::placeholder {
+footer .delicious-contact .subscribe form input::placeholder,
+footer .recent-posts .subscribe form input::placeholder,
+footer .subscribe .subscribe form input::placeholder {
   font-size: .4rem;
 }
 
-footer .subscribe form button {
+footer .delicious-contact .subscribe form button,
+footer .recent-posts .subscribe form button,
+footer .subscribe .subscribe form button {
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -448,15 +530,21 @@ footer .subscribe form button {
   background-color: #64A604;
 }
 
-footer .subscribe form button i {
+footer .delicious-contact .subscribe form button i,
+footer .recent-posts .subscribe form button i,
+footer .subscribe .subscribe form button i {
   color: #F6F6F6;
 }
 
-footer .subscribe p {
+footer .delicious-contact .subscribe p,
+footer .recent-posts .subscribe p,
+footer .subscribe .subscribe p {
   border-bottom: none;
 }
 
-footer .subscribe .social-icons ul {
+footer .delicious-contact .subscribe .social-icons ul,
+footer .recent-posts .subscribe .social-icons ul,
+footer .subscribe .subscribe .social-icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,16 +555,35 @@ footer .subscribe .social-icons ul {
   margin-top: .4rem;
 }
 
-footer .subscribe .social-icons ul li {
+footer .delicious-contact .subscribe .social-icons ul li,
+footer .recent-posts .subscribe .social-icons ul li,
+footer .subscribe .subscribe .social-icons ul li {
   max-width: 1rem;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 2rem;
           flex: 0 0 2rem;
 }
 
-footer .subscribe .social-icons ul a i {
+footer .delicious-contact .subscribe .social-icons ul a i,
+footer .recent-posts .subscribe .social-icons ul a i,
+footer .subscribe .subscribe .social-icons ul a i {
   color: #F6F6F6;
   font-size: .5rem;
+}
+
+footer .legal {
+  background-color: #333333;
+}
+
+footer .legal .container p {
+  font-size: .6rem;
+  padding: .4rem 0;
+  margin: 0;
+  color: #F6F6F6;
+}
+
+footer .legal .container p span {
+  color: #64A604;
 }
 
 .top-bar ul {
@@ -568,11 +675,24 @@ nav {
   display: flex;
 }
 
-.logo,
-.top-bar ul {
+nav .logo,
+nav ul {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
+}
+
+@media (max-width: 1000px) {
+  nav .logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+  }
+  nav ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 60%;
+            flex: 1 0 60%;
+  }
 }
 
 #ham-label {
@@ -679,7 +799,7 @@ nav {
 }
 
 .author .author-message {
-  background-color: #e9e9e9;
+  background-color: #f1f1f1;
   padding: 0 1rem;
   margin-left: .5rem;
 }
@@ -755,7 +875,7 @@ nav {
 .comments .comment-1 .comment-text,
 .comments .comment-2 .comment-text {
   padding: 1rem;
-  background-color: #e9e9e9;
+  background-color: #f1f1f1;
 }
 
 .comments .comment-1 .comment-text h4,
@@ -763,6 +883,24 @@ nav {
 .comments .comment-2 .comment-text h4,
 .comments .comment-2 .comment-text p {
   margin: 0;
+}
+
+.comments .bubble {
+  position: relative;
+  background: #fff;
+}
+
+.comments .bubble:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -14px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 15px solid #f1f1f1;
 }
 
 .comments .comment {
@@ -803,12 +941,21 @@ nav {
   margin: 0 .55rem;
 }
 
+@media (max-width: 1100px) {
+  .comments .comment form .top-inputs input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 200px;
+            flex: 1 1 200px;
+  }
+}
+
 @media (max-width: 900px) {
   .comments .comment form .top-inputs input {
     min-width: 0;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 80%;
             flex: 1 1 80%;
+    margin: .2rem 0;
   }
 }
 
@@ -821,6 +968,12 @@ nav {
   margin: 4px 2px;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .comments .comment form button {
+    padding: .6rem 1rem;
+  }
 }
 
 .comments .comment form textarea {
@@ -855,16 +1008,24 @@ h1 {
       grid-template-columns: 2fr 1fr;
 }
 
+@media (max-width: 900px) {
+  .contact {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .contact .contact-form form {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
+  grid-gap: 10px;
 }
 
 .contact .contact-form form label {
   display: block;
+  font-size: .1rem;
 }
 
 .contact .contact-form form form p {
@@ -881,6 +1042,10 @@ h1 {
 .contact .contact-form form input,
 .contact .contact-form form textarea {
   padding: 1em;
+}
+
+.contact .contact-form form input {
+  margin: 0;
 }
 
 .contact .contact-form form button {
@@ -940,6 +1105,15 @@ aside .working-hours p:last-child {
           flex-direction: row;
 }
 
+@media (max-width: 1100px) {
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .recipes-image,
 .recipes-intro,
 .menu-image,
@@ -949,11 +1123,31 @@ aside .working-hours p:last-child {
           flex: 1 1 50%;
 }
 
+@media (max-width: 1100px) {
+  .recipes-image,
+  .recipes-intro,
+  .menu-image,
+  .menu-list {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 90%;
+            flex: 1 1 90%;
+  }
+}
+
 .recipes {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+@media (max-width: 1100px) {
+  .recipes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .recipes .recipes-intro {
@@ -1004,7 +1198,14 @@ aside .working-hours p:last-child {
   margin: auto;
 }
 
+@media (max-width: 1100px) {
+  .recipes .recipes-intro {
+    padding: 1rem 0;
+  }
+}
+
 .menu-list {
+  background-color: #f1f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1014,6 +1215,12 @@ aside .working-hours p:last-child {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .menu-list {
+    padding: 2rem 0;
+  }
 }
 
 .menu-list ul {
@@ -1035,10 +1242,22 @@ aside .working-hours p:last-child {
   margin: auto auto;
 }
 
+@media (max-width: 1100px) {
+  .menu-list ul {
+    max-width: 37rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-list ul {
+    max-width: 31rem;
+  }
+}
+
 .menu-list ul li {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
   text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1066,7 +1285,19 @@ aside .working-hours p:last-child {
   line-height: .8rem;
 }
 
-.our-restaurants-pics {
+.our-restaurants {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 1100px) {
+  .our-restaurants {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.our-restaurants .our-restaurants-pics {
   max-width: 18rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1080,7 +1311,7 @@ aside .working-hours p:last-child {
   position: relative;
 }
 
-.our-restaurants-pics .circle-text-image {
+.our-restaurants .our-restaurants-pics .circle-text-image {
   position: absolute;
   width: 7rem;
   top: -3.5rem;
@@ -1150,6 +1381,13 @@ aside .working-hours p:last-child {
 
 .testimonial {
   background-color: #dded9a;
+  padding: 3rem 0;
+}
+
+@media (max-width: 1100px) {
+  .testimonial {
+    padding: 2rem 0;
+  }
 }
 
 .testimonial-center {
@@ -1165,7 +1403,23 @@ aside .working-hours p:last-child {
   margin: auto;
 }
 
+.testimonial-center h2:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 10%;
+  /* width of the underline. */
+  padding-top: .5rem;
+  /* This creates some space between the element and the border. */
+  border-bottom: 3px solid #64A604;
+  /* This creates the border. Replace black with whatever color you want. */
+}
+
 .testimonial-center blockquote {
+  padding: 1rem;
   font-size: .7rem;
   line-height: 1rem;
   font-style: italic;
@@ -1191,6 +1445,7 @@ aside .working-hours p:last-child {
 }
 
 .testimonial-center p i {
+  padding: 1rem 0;
   font-size: 1.5rem;
   color: white;
   margin: .6rem;

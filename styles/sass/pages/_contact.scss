@@ -31,14 +31,19 @@ h1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
 
+      @media(max-width: $second-bp) {
+            grid-template-columns: 1fr;
+      }
+
     .contact-form {
         form {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          grid-gap: 15px;
+          grid-gap: 10px;
 
               label {
                 display: block;
+                font-size: .1rem;
               }
 
               form p {
@@ -53,6 +58,10 @@ h1 {
               input,
               textarea {
                 padding: 1em;
+              }
+
+              input {
+                margin: 0;
               }
 
               button {

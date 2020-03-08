@@ -19,27 +19,32 @@
     <header class="header-blog">
         <!-- Header wrapper -->
         <div class="wrapper">
-        
+    
             <!-- Navigation of site -->
             <nav class="top-bar">
                 <!-- Logo -->
-                <h2 class="logo">Delicious</h1>
-        
-                <ul>
+                <h1 class="logo">Delicious</h1>
+    
+                <!-- Hamburger menu  -->
+                <input type="checkbox" id="ham-label">
+                <label for="ham-label" class="toggle-label"><span></span></label>
+                <!-- Hamburger menu ends -->
+    
+                <!-- Nav List -->
+                <ul class="nav-items">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Recipes</a></li>
                     <li><a href="">Nutrition</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
                     <li><a href="">Shop</a></li>
                     <li><a href="./contact.html">Contact</a></li>
-                    <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
+                    <li><a href=""><span class="shopping-bag"><i class="fas fa-shopping-bag"></i></span><span
+                                class="green-circle">2</span></a></li>
                     <li><a href=""><i class="fas fa-search"></i></a></li>
                 </ul>
             </nav><!-- Nav ends -->
-        
-
-        </div><!-- Header wrapper ends -->
+    
     </header><!-- Header ends -->
 
     <!-- Main -->
@@ -105,19 +110,19 @@
 
                 <div class="posts">
                     <div class="post-1">
-                        <img src="./delicious-assets/blog-3.jpeg" alt="">
+                        <img src="./delicious-assets/blog-3.jpeg" alt="a nice pink cake">
                         <h4>How to bake the perfect cake</h4>
                         <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
                     </div>
 
                     <div class="post-2">
-                        <img src="./delicious-assets/blog-4.jpeg" alt="">
+                        <img src="./delicious-assets/blog-4.jpeg" alt="floral cup cakes">
                         <h4>Floral cupcakes</h4>
                         <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
                     </div>
 
                     <div class="post-3">
-                        <img src="./delicious-assets/blog-5.jpeg" alt="">
+                        <img src="./delicious-assets/blog-5.jpeg" alt="a nicely presented dish">
                         <h4>Single post with image</h4>
                         <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
                     </div>
@@ -130,9 +135,9 @@
             <h3>02 comments</h3>
             <div class="comment-1">
                 <div class="comment-image">
-                    <img src="./delicious-assets/blog-6.jpeg" alt="">
+                    <img src="./delicious-assets/blog-6.jpeg" alt="Lucatony Avaro pic">
                 </div>
-                <div class="comment-text">
+                <div class="comment-text bubble">
                     <h4>Lucatony Avaro <span>- Web developer</span></h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque sapiente deleniti omnis expedita numquam!</p>
                     <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
@@ -141,9 +146,9 @@
 
             <div class="comment-2">
                 <div class="comment-image">
-                    <img src="./delicious-assets/blog-7.jpeg" alt="">
+                    <img src="./delicious-assets/blog-7.jpeg" alt="Brian Hudson pic">
                 </div>
-                <div class="comment-text">
+                <div class="comment-text bubble">
                     <h4>Brian Hudson <span>- Web developer</span></h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque sapiente deleniti omnis expeditas numquam!</p>
                     <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
@@ -185,10 +190,10 @@
                 <!-- Contact -->
                 <div class="delicious-contact">
                     <h3>Delicious</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum mollitia ab corporis temporibus
-                        deleniti consectetur esse rerum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum mollitia ab cor .</p>
                     <address>
-    
+                        A delicious restaurant <br>
+                        Toronto, Ontario
                     </address>
     
                     <p>yum@food.com</p>
@@ -198,10 +203,10 @@
     
                 <!-- Recent Posts -->
                 <div class="recent-posts">
-                    <h3>Recent Posts</h3>
+                    <h4>Recent Posts</h4>
                     <ul>
                         <li><a href="">Beetroot spinach okra water</a></li>
-                        <li><a href="">Chestnut ricebean pae catsearcourgette</a></li>
+                        <li><a href="">Chestnut ricebean pae catsearcgette</a></li>
                         <li><a href="">Summer purslane spinacharugula pea</a></li>
                         <li><a href="">Tatsoi aubergine spring onion bush</a></li>
                         <li><a href="">Tomato kale radicchio turnip chicory</a></li>
@@ -211,22 +216,28 @@
     
                 <!-- Subscribe Now-->
                 <div class="subscribe">
+                    <h4>Subscribe Now</h4>
                     <p>Get all of our newest recipes immediately in your inbox.</p>
                     <form action="">
-                        <input type="email">
-                        <button type="submit"> Send Message <span><i
-                                    class="far fa-long-arrow-alt-right"></i></span></button>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
                     </form>
     
                     <div class="social-icons">
                         <ul>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div><!-- Subscribe Now ends-->
     </footer><!-- Footer ends -->
+    
+    <div class="legal">
+        <div class="container">
+            <p>Copyrights &copy; by <span>POLAR</span>. All Rights Reserved</p>
+        </div>
+    </div>
     
 </body>
 </html>

@@ -3,12 +3,15 @@
 
 .recipes,
 .menu {    
-    display: flex;
-    
+    display: flex;    
 }
 
 .menu {
     flex-direction: row;
+
+    @media(max-width: $first-bp) {
+        flex-direction: column;
+    }
     
 }
 
@@ -17,10 +20,18 @@
 .menu-image,
 .menu-list {
     flex: 1 1 50%;
+
+    @media(max-width: $first-bp) {
+        flex: 1 1 90%;
+    }
 }
 
 .recipes {
     flex-direction: row-reverse;
+
+    @media(max-width: $first-bp) {
+        flex-direction: column;
+    }
 
     .recipes-intro {    
         margin: auto;
@@ -48,31 +59,49 @@
         .recipes-intro-container {
             @include  align-center(21rem);
         }
+
+         @media(max-width: $first-bp) {
+            padding: 1rem 0;;
+        }
     }
 }
 
 
 
 .menu-list {
-    // padding: 10px;
+    background-color: darken($color-white, 2%);
     display: flex;
     align-items: center;
     justify-content: center;
+
+     @media(max-width: $first-bp) {
+            padding: 2rem 0;
+    }
+
+
+    ul {
+        max-width: 22rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;  
+        margin: auto auto;  
+
+        @media(max-width: $first-bp) {
+            max-width: 37rem;
+        }
+
+        @media(max-width: $second-bp) {
+            max-width: 31rem;
+        }
+
+    }
     
 }
 
-.menu-list ul {
-    max-width: 22rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-wrap: wrap;  
-    margin: auto auto;  
-}
-
 .menu-list ul li {
-    flex: 1 1 40%;
+    flex: 1 1 30%;
     text-align: left;
     display: flex;
     justify-content: space-between;
@@ -95,25 +124,34 @@
             font-size: .5rem;
             line-height: .8rem;
         }
-    }
-
-    
+    }    
 }
 // ----------------------------------------
 // Our Restaurant Section
 //-----------------------------------------
 
-.our-restaurants-pics {
-    @include align-center(18rem);
-    position: relative;
+.our-restaurants {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
 
-    .circle-text-image {
-        position: absolute;
-        width: 7rem;
-        top: -3.5rem;
-        right: -3.5rem;
+     @media(max-width: $first-bp) {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .our-restaurants-pics {
+        @include align-center(18rem);
+        position: relative;
+
+        .circle-text-image {
+            position: absolute;
+            width: 7rem;
+            top: -3.5rem;
+            right: -3.5rem;
+        }
     }
 }
+
 
 .our-restaurants-text {
     p {
@@ -155,13 +193,22 @@
 
 .testimonial {
     background-color: $color-light-green;
-    
+    padding: 3rem 0;
+
+    @media(max-width: $first-bp) {
+        padding: 2rem 0;
+    }
 }
 
 .testimonial-center {
     @include align-center($width-wrapper-center);
 
+    h2:after {
+        @include heading-underline(10%);
+    }
+
     blockquote {
+        padding: 1rem;
         font-size: .7rem;
         line-height: 1rem;
         font-style: italic;
@@ -187,6 +234,7 @@
     }
     
     p i {
+        padding: 1rem 0;
         font-size:1.5rem;
         color: lighten($color-white, 5%);
         margin: .6rem;
