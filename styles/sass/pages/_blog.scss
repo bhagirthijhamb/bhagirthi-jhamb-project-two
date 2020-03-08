@@ -80,6 +80,21 @@
         border-bottom: 1px solid $color-brown-grey;
         // margin: 0 -5rem;
 
+        @media (max-width: $third-bp){
+            flex-direction: column;
+            padding-bottom: 1rem;
+            align-items: center;
+        }
+
+        .post-1,
+        .post-2,
+        .post-3 {
+            @media (max-width: $third-bp){
+                margin-bottom: 1rem;
+            }
+            
+        }
+
         .post-2 {
             margin: 0 .5rem;
         }
