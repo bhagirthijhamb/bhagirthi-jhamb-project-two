@@ -1,35 +1,63 @@
 header {
      background-position: 50% 50%;
     background-repeat: no-repeat;
-    // background-size: 100% 100%;
     background-size: cover;
-
     width: 100%;
-    min-height: 100vh;
-    // height: auto;
     display: flex;
     justify-content: space-between;
+
+    h1, h2 {
+        font-weight: Bold;
+        font-size: 1.6rem;
+        line-height: 24px;
+        letter-spacing: 1.1 px;
+    }
+
+    a {
+        font-size: .6rem;
+    }
+
 }
 
 .header-home {    
     background-image: url('../delicious-assets/home-1.jpeg');
+    min-height: 100vh;
+
+    ul li:first-child a {
+        color: $color-dark-green;
+    }
 }
 
 .header-blog {
-    background-image: url('../delicious-assets/blog-1.jpeg');    
+    background-image: url('../delicious-assets/blog-1.jpeg'); 
+    min-height: 60vh; 
+    
+    ul li:nth-child(5) a {
+        color: $color-dark-green;
+    }
 }
 
 .header-contact {
-    background-image: url('../delicious-assets/contact-1.jpeg');    
+    background-image: url('../delicious-assets/contact-1.jpeg'); 
+    min-height: 60vh; 
+    
+    ul li:nth-child(7) a {
+        color: $color-dark-green;
+    }
 }
+
+//-------------------------------------------------
+// Navigation
+//-------------------------------------------------
 
 // Shopping Bag
 
-.top-bar ul li:nth-child(8) {
+
+.top-bar ul li:nth-child(8) a {
     position: relative;
 }
 
-.top-bar ul li:nth-child(8) span {
+.top-bar ul li:nth-child(8) span.green-circle {
     width: 15px;
     height: 15px;
     font-size: 8px;
@@ -37,7 +65,7 @@ header {
     vertical-align: middle;
     margin: auto;
     border-radius: 50%;
-    background: $color-light-green;
+    background: $color-dark-green;
     color: white;
     position: absolute;
     bottom: -4px;
@@ -118,9 +146,7 @@ nav {
             ul.nav-items li {
                 background: white;
                 width: 100%;
-            }
-
-    
+            }  
 
 
 }

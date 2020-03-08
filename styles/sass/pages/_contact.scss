@@ -1,3 +1,7 @@
+h1 {
+        font-size: 1.2rem;
+    }
+
 .display-pic {
     background: url('../delicious-assets/contact-2.jpeg');
     background-position: 50% 50%;
@@ -7,18 +11,101 @@
     min-height: 60vh;    
 }
 
-.contact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;    
-}
+// .contact {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;    
+// }
 
-.contact-form {
-    // flex: 1 1 65%;
-    flex-basis: 65%;
+// .contact-form {
+//     // flex: 1 1 65%;
+//     flex-basis: 65%;
+// }
+
+// aside {
+//     // flex: 1 1 35%
+//     flex-basis: 35%;
+// }
+
+.contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    .contact-form {
+        form {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 15px;
+
+              label {
+                display: block;
+              }
+
+              form p {
+                margin: 0;
+              }
+
+              .full-width {
+                grid-column: 1 / 3;
+              }
+
+              button,
+              input,
+              textarea {
+                padding: 1em;
+              }
+
+              button {
+                background-color: transparent;
+                color: $color-dark-green;
+                width: 100%;
+                border: 0;
+                text-align: left;
+              }
+              button:hover, button:focus {
+                background: $color-dark-green;
+                color: $color-white;
+                outline: 0;
+              }
+              
+              input,
+              textarea {
+                  width: 95%;
+                  background-color: darken($color-white, 2%);
+              }
+          }
+      }
 }
 
 aside {
-    // flex: 1 1 35%
-    flex-basis: 35%;
+  background-color: darken($color-white, 2%);
+  padding: 1rem;
+      h2 {
+        font-size: .9rem;
+      }
+
+      h3 {
+        font-size: .7rem; 
+        margin-top: 2rem;
+      }
+
+      p, address {        
+        font-size: .6rem;
+        line-height: .8rem;
+      }
+
+      .working-hours p:last-child {
+        margin-top: 0;
+      }
 }
+
+
+
+
+
+
+
+
+
+
+

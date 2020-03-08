@@ -1,58 +1,148 @@
-.blog-recipe {
-    border-bottom: 1px solid $color-brown-grey;
+.blog {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .blog-recipe {
+        padding: 2rem 0;
+        p:nth-of-type(1) {
+        font-weight: bold;
+    }
+    }
+
+       
 }
 
-.blog-tags-share{
-    border-bottom: 1px solid $color-brown-grey;
-}
+    .blog-recipe,
+    .blog-tags-share {
+        border-bottom: 1.5px solid darken($color-white, 10%);
+    }
+
+    .blog-tags-share {
+        padding: 1rem 0;
+        h3 {
+            display: inline;
+        }
+
+        .tags {
+            p {
+                display: inline;
+            }
+    
+        }
+
+        .share {
+            ul li, ul {
+                display: inline;
+            }
+
+            ul li {
+                margin-right: .3rem;
+                margin-left: .3rem;
+            }
+        }
+    } 
+
+
+
 
 .author {
     display: flex;
     flex-direction: row;
     padding: 2rem 0;
     border-bottom: 1px solid $color-brown-grey;
-}
 
-.related-posts {
-    
-    
-    .posts {
-        display: flex;
-        flex-direction: row;
-        border-bottom: 1px solid $color-brown-grey;
-        // margin: 0 -5rem;
+    .author-image {
+        width: 14rem;
+    }
 
-        .post-1,
-        .post-2,
-        .post-3 {
-            margin: 0 .5rem;
+    .author-message {
+        background-color: darken($color-white, 5%);;
+        padding: 0 1rem;
+        margin-left: .5rem;
+
+        h3 {
+            margin-bottom: 0;
+        }
+        p {
+            margin-top: .3rem;
+            font-size: .7rem;
+            line-height: .9rem;
         }
     }
 }
 
+.related-posts {  
+    
+    padding: 1rem 0;
+    
+    .posts {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $color-brown-grey;
+        // margin: 0 -5rem;
+
+        .post-2 {
+            margin: 0 .5rem;
+        }
+
+        h4 {
+            font-size: .7rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: .5rem;
+            margin: 0;
+        }
+    }
+}
+
+
+
 .comments {
+    margin-top: 1rem;
+
     .comment-1,
     .comment-2 {
         display: flex;
         flex-direction: row;
-        margin: 0 -.25rem;
+        margin: 1rem -.25rem;
+
+        .comment-image {
+            width: 4rem;
+        }
 
         .comment-image,
         .comment-text {
             margin: 0 .25rem;
         }
 
+        .comment-text {
+            padding: 1rem;
+            background-color: darken($color-white, 5%);
+        }
+
         .comment-text h4,
         .comment-text p {
             margin: 0;
         }
-
-        .comment-text {
-            background-color: $color-light-grey;
-        }
     }
 
     .comment {
+        margin-top: 2rem;
+
+        h3 {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-top: 0;
+            font-style: italic;
+            color: lighten($color-brown-grey, 10%);
+        }
+
         form {
             .top-inputs {
                 display: flex;
@@ -73,18 +163,30 @@
                                  flex: 1 1 80%;
                                 // flex-basis: 100%;
                         
-                        }
                     }
+                }
+            }
 
-
+             button {
+                 background-color: $color-dark-green;
+                border: none;
+                color: white;
+                padding: .8rem 2rem;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+                text-transform: uppercase;
             }
 
             textarea {
+                padding: .7rem;
                 width: 100%;
                 flex: 1 1 1;
             }
-            
-            
+
+            input, textarea {
+                border-color: lighten($color-brown-grey, 30%);
+            }            
         }
     }
 }

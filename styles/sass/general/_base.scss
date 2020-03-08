@@ -11,18 +11,45 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 // -------------------------------------------
 // VARIABLES
 // --------------------------------------------
-// --------------------------------------------
+
 // Colors
-// ------------------------------
-$color-light-green: #64A604;
-$color-dark-green:#dded9a;
-$color-light-grey:#eee;
+
+$color-light-green:#dded9a;
+$color-dark-green: #64A604;
+$color-white:#F6F6F6; //246, 246, 246
 $color-brown-grey:#999999; // 153, 153, 153
 $color-black:#2E2E2E; //46, 46, 46
-$color-white:#F6F6F6; //246, 246, 246
 $color-black-two:#333333; //51, 51, 51
 
 $width-wrapper-center:800px;
+
+//-----------------------------------------------
+// MIXINS
+//-----------------------------------------------
+
+@mixin heading-underline($width) {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: $width; /* width of the underline. */
+    padding-top: .5rem; /* This creates some space between the element and the border. */
+    border-bottom: 3px solid $color-dark-green; /* This creates the border. Replace black with whatever color you want. */
+}
+
+@mixin align-center($max-width) {
+    max-width: $max-width;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+@mixin p-style() {
+     font-size: .5rem;
+    line-height: .8rem;
+}
+
+
 
 
 // -----------------------------------------------
@@ -52,14 +79,6 @@ body {
     max-width: $width-wrapper-center;
     margin: 0 auto;
 }
-
-
-
-
-
-
-
-
 
 h1 {
 	font-family: 'Raleway', sans-serif;
@@ -118,17 +137,20 @@ li {
 }
 
 a {
+    font-family: 'Raleway', sans-serif;
 	text-decoration: none;
 	color: $color-black;
 }
+
 
 img {
 	max-width: 100%;
 }
 
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, a, button {
     text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
 }
 
 

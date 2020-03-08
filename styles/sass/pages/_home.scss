@@ -7,11 +7,6 @@
     
 }
 
-.recipes {
-    flex-direction: row-reverse;
-    
-}
-
 .menu {
     flex-direction: row;
     
@@ -24,39 +19,111 @@
     flex: 1 1 50%;
 }
 
+.recipes {
+    flex-direction: row-reverse;
+
+    .recipes-intro {    
+        margin: auto;
+        
+        h2 {
+            font-size: 1rem;
+        }
+
+
+        h2:after {
+            @include heading-underline(25%);
+        }
+
+        p {
+           @include p-style;
+        }
+
+        a {
+            font-size: .5rem;
+            background: $color-dark-green;
+            color: $color-white;
+            padding: .5rem .8rem;
+        }
+
+        .recipes-intro-container {
+            @include  align-center(21rem);
+        }
+    }
+}
+
+
+
 .menu-list {
-    padding: 10px;
+    // padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .menu-list ul {
+    max-width: 22rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    // align-content: space-around;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;  
+    margin: auto auto;  
 }
 
 .menu-list ul li {
-    flex: 1 1 50%;
+    flex: 1 1 40%;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
+
+    a i {
+        font-size: 1rem;
+        margin: 0 .5rem;
+    }
+    .menu-item-details {
+        h3 a {
+            font-size: .8rem;
+            
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            font-size: .5rem;
+            line-height: .8rem;
+        }
+    }
+
+    
 }
 // ----------------------------------------
 // Our Restaurant Section
 //-----------------------------------------
 
-.our-restaurants {
-	max-width: 600px;
-    margin: 0 auto;
-    
-    .images {
-        position: relative;
-    }
+.our-restaurants-pics {
+    @include align-center(18rem);
+    position: relative;
 
     .circle-text-image {
         position: absolute;
-        width: 200px;
-        top: -100px;
-        right: -100px;
+        width: 7rem;
+        top: -3.5rem;
+        right: -3.5rem;
+    }
+}
+
+.our-restaurants-text {
+    p {
+        @include p-style;
+    }
+
+    @include align-center(28rem);
+
+    h2:after {
+        @include heading-underline(10%);
     }
 }
 
@@ -64,16 +131,22 @@
 // Gallery
 // -----------------------------
 
+.gallery .wrapper {
+    padding-bottom: 0;
+}
 .gallery ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    // align-content: space-around;
-}
 
-.gallery ul li {
-    flex: 1 1 33.33%;
+    li {
+        flex: 1 1 33.33%;
+
+        img {
+            display: block;
+        }
+    }
 }
 
 // --------------------------------------
@@ -81,13 +154,47 @@
 // ----------------------------------------
 
 .testimonial {
-    background-color: $color-dark-green;
+    background-color: $color-light-green;
     
 }
 
 .testimonial-center {
-    width: $width-wrapper-center;
-    margin: 0 auto;
-    text-align: center;
+    @include align-center($width-wrapper-center);
+
+    blockquote {
+        font-size: .7rem;
+        line-height: 1rem;
+        font-style: italic;
+        position: relative;
+
+        &:before {
+            content: '\201C';
+            font-size: 5rem;
+            color: lighten($color-white, 5%);
+            position: absolute;
+            top: 1rem;
+            left: -4rem;
+        }
+
+        &:after {
+            content: '\201D';
+            font-size: 5rem;
+            color: lighten($color-white, 5%);
+            position: absolute;
+            bottom: -1rem;
+            right: -4rem;
+        }
+    }
+    
+    p i {
+        font-size:1.5rem;
+        color: lighten($color-white, 5%);
+        margin: .6rem;
+
+        &:first-child {
+            color: darken($color-white, 2%)
+        }
+    }
+    
 }
 

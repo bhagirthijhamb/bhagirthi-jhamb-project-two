@@ -311,6 +311,7 @@ li {
 }
 
 a {
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: #2E2E2E;
 }
@@ -319,16 +320,17 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, a, button {
   text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
 }
 
 footer {
   background: #2E2E2E;
-  color: #F6F6F6;
+  color: #c3c3c3;
 }
 
-.footer-center {
+footer .footer-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,17 +340,54 @@ footer {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 28%;
+          flex: 1 1 28%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.delicious-contact,
-.recent-posts,
-.subscribe {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
+footer h3 {
+  color: #64A604;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+
+footer p, footer ul, footer address, footer a {
+  font-size: .5rem;
+  line-height: .7rem;
+}
+
+footer p, footer address {
+  border-bottom: 1px solid #c3c3c3;
+  padding-bottom: .5rem;
+}
+
+footer .recent-posts {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .recent-posts ul li {
+  text-align: left;
+  color: inherit;
+  padding: .4rem 0;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+footer .recent-posts ul li a {
+  color: #c3c3c3;
+  text-transform: capitalize;
+}
+
+footer .delicious-contact,
+footer .recent-posts,
+footer .subscribe {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,16 +397,86 @@ footer {
           flex-direction: column;
 }
 
-.recent-posts {
-  margin: 0 20px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+footer .delicious-contact p:last-child {
+  margin-top: 0;
 }
 
-.recent-posts ul li {
-  text-align: left;
-  color: inherit;
+footer .recent-posts li:last-child,
+footer .delicious-contact p:last-child {
+  border-bottom: none;
+}
+
+footer .subscribe form {
+  border-bottom: 1px solid #c3c3c3;
+  padding-bottom: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .subscribe form input {
+  padding: .2rem .4rem;
+  background-color: #4d4d4d;
+  color: #c3c3c3;
+}
+
+footer .subscribe form input::-webkit-input-placeholder {
+  font-size: .4rem;
+}
+
+footer .subscribe form input:-ms-input-placeholder {
+  font-size: .4rem;
+}
+
+footer .subscribe form input::-ms-input-placeholder {
+  font-size: .4rem;
+}
+
+footer .subscribe form input::placeholder {
+  font-size: .4rem;
+}
+
+footer .subscribe form button {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: #64A604;
+  background-color: #64A604;
+}
+
+footer .subscribe form button i {
+  color: #F6F6F6;
+}
+
+footer .subscribe p {
+  border-bottom: none;
+}
+
+footer .subscribe .social-icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: .4rem;
+}
+
+footer .subscribe .social-icons ul li {
+  max-width: 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 2rem;
+          flex: 0 0 2rem;
+}
+
+footer .subscribe .social-icons ul a i {
+  color: #F6F6F6;
+  font-size: .5rem;
 }
 
 .top-bar ul {
@@ -387,7 +496,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,23 +504,49 @@ header {
           justify-content: space-between;
 }
 
+header h1, header h2 {
+  font-weight: Bold;
+  font-size: 1.6rem;
+  line-height: 24px;
+  letter-spacing: 1.1 px;
+}
+
+header a {
+  font-size: .6rem;
+}
+
 .header-home {
   background-image: url("../delicious-assets/home-1.jpeg");
+  min-height: 100vh;
+}
+
+.header-home ul li:first-child a {
+  color: #64A604;
 }
 
 .header-blog {
   background-image: url("../delicious-assets/blog-1.jpeg");
+  min-height: 60vh;
+}
+
+.header-blog ul li:nth-child(5) a {
+  color: #64A604;
 }
 
 .header-contact {
   background-image: url("../delicious-assets/contact-1.jpeg");
+  min-height: 60vh;
 }
 
-.top-bar ul li:nth-child(8) {
+.header-contact ul li:nth-child(7) a {
+  color: #64A604;
+}
+
+.top-bar ul li:nth-child(8) a {
   position: relative;
 }
 
-.top-bar ul li:nth-child(8) span {
+.top-bar ul li:nth-child(8) span.green-circle {
   width: 15px;
   height: 15px;
   font-size: 8px;
@@ -490,12 +624,42 @@ nav {
   }
 }
 
-.blog-recipe {
-  border-bottom: 1px solid #999999;
+.blog h1 {
+  font-size: 1.2rem;
+}
+
+.blog .blog-recipe {
+  padding: 2rem 0;
+}
+
+.blog .blog-recipe p:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.blog-recipe,
+.blog-tags-share {
+  border-bottom: 1.5px solid #dddddd;
 }
 
 .blog-tags-share {
-  border-bottom: 1px solid #999999;
+  padding: 1rem 0;
+}
+
+.blog-tags-share h3 {
+  display: inline;
+}
+
+.blog-tags-share .tags p {
+  display: inline;
+}
+
+.blog-tags-share .share ul li, .blog-tags-share .share ul {
+  display: inline;
+}
+
+.blog-tags-share .share ul li {
+  margin-right: .3rem;
+  margin-left: .3rem;
 }
 
 .author {
@@ -510,6 +674,30 @@ nav {
   border-bottom: 1px solid #999999;
 }
 
+.author .author-image {
+  width: 14rem;
+}
+
+.author .author-message {
+  background-color: #e9e9e9;
+  padding: 0 1rem;
+  margin-left: .5rem;
+}
+
+.author .author-message h3 {
+  margin-bottom: 0;
+}
+
+.author .author-message p {
+  margin-top: .3rem;
+  font-size: .7rem;
+  line-height: .9rem;
+}
+
+.related-posts {
+  padding: 1rem 0;
+}
+
 .related-posts .posts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,13 +706,26 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #999999;
 }
 
-.related-posts .posts .post-1,
-.related-posts .posts .post-2,
-.related-posts .posts .post-3 {
+.related-posts .posts .post-2 {
   margin: 0 .5rem;
+}
+
+.related-posts .posts h4 {
+  font-size: .7rem;
+  margin: 0;
+}
+
+.related-posts .posts p {
+  font-size: .5rem;
+  margin: 0;
+}
+
+.comments {
+  margin-top: 1rem;
 }
 
 .comments .comment-1,
@@ -536,7 +737,12 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0 -.25rem;
+  margin: 1rem -.25rem;
+}
+
+.comments .comment-1 .comment-image,
+.comments .comment-2 .comment-image {
+  width: 4rem;
 }
 
 .comments .comment-1 .comment-image,
@@ -546,6 +752,12 @@ nav {
   margin: 0 .25rem;
 }
 
+.comments .comment-1 .comment-text,
+.comments .comment-2 .comment-text {
+  padding: 1rem;
+  background-color: #e9e9e9;
+}
+
 .comments .comment-1 .comment-text h4,
 .comments .comment-1 .comment-text p,
 .comments .comment-2 .comment-text h4,
@@ -553,9 +765,18 @@ nav {
   margin: 0;
 }
 
-.comments .comment-1 .comment-text,
-.comments .comment-2 .comment-text {
-  background-color: #eee;
+.comments .comment {
+  margin-top: 2rem;
+}
+
+.comments .comment h3 {
+  margin-bottom: 0;
+}
+
+.comments .comment p {
+  margin-top: 0;
+  font-style: italic;
+  color: #b3b3b3;
 }
 
 .comments .comment form .top-inputs {
@@ -591,11 +812,31 @@ nav {
   }
 }
 
+.comments .comment form button {
+  background-color: #64A604;
+  border: none;
+  color: white;
+  padding: .8rem 2rem;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
 .comments .comment form textarea {
+  padding: .7rem;
   width: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 1;
           flex: 1 1 1;
+}
+
+.comments .comment form input, .comments .comment form textarea {
+  border-color: #e6e6e6;
+}
+
+h1 {
+  font-size: 1.2rem;
 }
 
 .display-pic {
@@ -608,25 +849,81 @@ nav {
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
 }
 
-.contact-form {
-  -ms-flex-preferred-size: 65%;
-      flex-basis: 65%;
+.contact .contact-form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.contact .contact-form form label {
+  display: block;
+}
+
+.contact .contact-form form form p {
+  margin: 0;
+}
+
+.contact .contact-form form .full-width {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+.contact .contact-form form button,
+.contact .contact-form form input,
+.contact .contact-form form textarea {
+  padding: 1em;
+}
+
+.contact .contact-form form button {
+  background-color: transparent;
+  color: #64A604;
+  width: 100%;
+  border: 0;
+  text-align: left;
+}
+
+.contact .contact-form form button:hover, .contact .contact-form form button:focus {
+  background: #64A604;
+  color: #F6F6F6;
+  outline: 0;
+}
+
+.contact .contact-form form input,
+.contact .contact-form form textarea {
+  width: 95%;
+  background-color: #f1f1f1;
 }
 
 aside {
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
+  background-color: #f1f1f1;
+  padding: 1rem;
+}
+
+aside h2 {
+  font-size: .9rem;
+}
+
+aside h3 {
+  font-size: .7rem;
+  margin-top: 2rem;
+}
+
+aside p, aside address {
+  font-size: .6rem;
+  line-height: .8rem;
+}
+
+aside .working-hours p:last-child {
+  margin-top: 0;
 }
 
 .recipes,
@@ -634,13 +931,6 @@ aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.recipes {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
 }
 
 .menu {
@@ -659,11 +949,75 @@ aside {
           flex: 1 1 50%;
 }
 
+.recipes {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.recipes .recipes-intro {
+  margin: auto;
+}
+
+.recipes .recipes-intro h2 {
+  font-size: 1rem;
+}
+
+.recipes .recipes-intro h2:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 25%;
+  /* width of the underline. */
+  padding-top: .5rem;
+  /* This creates some space between the element and the border. */
+  border-bottom: 3px solid #64A604;
+  /* This creates the border. Replace black with whatever color you want. */
+}
+
+.recipes .recipes-intro p {
+  font-size: .5rem;
+  line-height: .8rem;
+}
+
+.recipes .recipes-intro a {
+  font-size: .5rem;
+  background: #64A604;
+  color: #F6F6F6;
+  padding: .5rem .8rem;
+}
+
+.recipes .recipes-intro .recipes-intro-container {
+  max-width: 21rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
 .menu-list {
-  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu-list ul {
+  max-width: 22rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -671,33 +1025,103 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: auto auto;
 }
 
 .menu-list ul li {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.our-restaurants {
-  max-width: 600px;
-  margin: 0 auto;
+.menu-list ul li a i {
+  font-size: 1rem;
+  margin: 0 .5rem;
 }
 
-.our-restaurants .images {
+.menu-list ul li .menu-item-details h3 a {
+  font-size: .8rem;
+}
+
+.menu-list ul li .menu-item-details h3 {
+  margin: 0;
+}
+
+.menu-list ul li .menu-item-details p {
+  font-size: .5rem;
+  line-height: .8rem;
+}
+
+.our-restaurants-pics {
+  max-width: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: auto;
   position: relative;
 }
 
-.our-restaurants .circle-text-image {
+.our-restaurants-pics .circle-text-image {
   position: absolute;
-  width: 200px;
-  top: -100px;
-  right: -100px;
+  width: 7rem;
+  top: -3.5rem;
+  right: -3.5rem;
+}
+
+.our-restaurants-text {
+  max-width: 28rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
+.our-restaurants-text p {
+  font-size: .5rem;
+  line-height: .8rem;
+}
+
+.our-restaurants-text h2:after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 10%;
+  /* width of the underline. */
+  padding-top: .5rem;
+  /* This creates some space between the element and the border. */
+  border-bottom: 3px solid #64A604;
+  /* This creates the border. Replace black with whatever color you want. */
+}
+
+.gallery .wrapper {
+  padding-bottom: 0;
 }
 
 .gallery ul {
@@ -720,12 +1144,58 @@ aside {
           flex: 1 1 33.33%;
 }
 
+.gallery ul li img {
+  display: block;
+}
+
 .testimonial {
   background-color: #dded9a;
 }
 
 .testimonial-center {
-  width: 800px;
-  margin: 0 auto;
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
+  margin: auto;
+}
+
+.testimonial-center blockquote {
+  font-size: .7rem;
+  line-height: 1rem;
+  font-style: italic;
+  position: relative;
+}
+
+.testimonial-center blockquote:before {
+  content: '\201C';
+  font-size: 5rem;
+  color: white;
+  position: absolute;
+  top: 1rem;
+  left: -4rem;
+}
+
+.testimonial-center blockquote:after {
+  content: '\201D';
+  font-size: 5rem;
+  color: white;
+  position: absolute;
+  bottom: -1rem;
+  right: -4rem;
+}
+
+.testimonial-center p i {
+  font-size: 1.5rem;
+  color: white;
+  margin: .6rem;
+}
+
+.testimonial-center p i:first-child {
+  color: #f1f1f1;
 }

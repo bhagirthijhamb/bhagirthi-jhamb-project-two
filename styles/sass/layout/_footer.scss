@@ -3,31 +3,127 @@
 // ----------------------------------------
 footer {
     background: $color-black;
-    color: $color-white;
+    color: darken($color-white, 20%);
+
+    .footer-center {    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1 1 28%;
+        justify-content: space-between;
+    }
+
+    h3 {
+        color: $color-dark-green;
+        margin-bottom: .5rem;
+        font-size: 1.2rem;
+    }
+
+    p, ul, address,a {
+        font-size: .5rem;
+        line-height: .7rem;
+    }
+
+    p, address{
+        border-bottom: 1px solid darken($color-white, 20%);
+        padding-bottom: .5rem;
+    }
+
+    .recent-posts {
+        align-items: flex-start;
+
+        ul li {
+        text-align: left;
+        color: inherit;
+        padding: .4rem 0;
+        border-bottom: 1px solid darken($color-white, 20%);
+
+        a {
+            color: darken($color-white, 20%);
+            text-transform: capitalize;
+        }
+    }
+    }
+
+    .delicious-contact,
+    .recent-posts,
+    .subscribe {
+        flex: 0 1 25%; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .delicious-contact p:last-child {
+        margin-top: 0;
+    }
+
+    .recent-posts li:last-child,
+    .delicious-contact p:last-child {
+        border-bottom: none;
+    }
+
+    .subscribe {
+
+        form {
+            border-bottom: 1px solid darken($color-white, 20%);
+            padding-bottom: .5rem;
+            display: flex;
+            flex-direction: row;
+
+            input {
+                padding: .2rem .4rem;
+                background-color: darken($color-brown-grey, 30%);
+                color: darken($color-white, 20%);
+
+                &::placeholder {
+                    font-size: .4rem;
+                }
+            }
+
+            button  {
+                // padding:     ;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                color: $color-dark-green;
+                background-color: $color-dark-green;
+
+                i {
+                    color: $color-white;
+                }
+            }
+            
+        }
+
+        p {
+            border-bottom: none;
+        }
+
+        .social-icons ul {
+            display: flex;
+            flex-direction: row;
+            margin-top: .4rem;
+
+            li {
+                max-width: 1rem;
+                flex: 0 0 2rem;
+            }
+
+            
+
+            a i {
+                color: $color-white;
+                font-size: .5rem;
+            }
+        }
+    }
+
+
+
+
 }
 
-.footer-center {    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-.delicious-contact,
-.recent-posts,
-.subscribe {
-      flex: 1 1 25%; 
 
-      display: flex;
-      flex-direction: column;
-}
 
-.recent-posts {
-    margin: 0 20px;
-    align-items: flex-start;
-}
 
-.recent-posts ul li {
-    text-align: left;
-    color: inherit;
-}

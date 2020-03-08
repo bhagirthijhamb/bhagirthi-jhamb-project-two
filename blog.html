@@ -26,13 +26,13 @@
                 <h2 class="logo">Delicious</h1>
         
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Recipes</a></li>
                     <li><a href="">Nutrition</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">Shop</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                     <li><a href=""><i class="fas fa-shopping-bag"></i></a></li>
                     <li><a href=""><i class="fas fa-search"></i></a></li>
                 </ul>
@@ -58,11 +58,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio autem aliquam quod tempore. Expedita.</p>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odit nesciunt pariatur itaque veniam laudantium, vero
-                    laboriosam reprehenderit sint. Hic ullam sint architecto illo eius?</p>
+                    laboriosam reprehenderit sint . Hic ullam sint architecto illo eius?</p>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, labore officia eos porro, explicabo
                     reiciendis illum dignissimos itaque perspiciatis iure quos ad voluptatum dolore nobis magnam neque sapiente
-                    voluptate nam minima molestias culpa? Dicta ad nihil eius numquam sint dignissimos minima sapiente nobis cumque
+                    voluptate nam minima molestias culpa? Dicta ad nihil eius numquam sint dignissimos itaque veniam laudantium, vero
+                    laboriosam reprehenderit sint minima sapiente nobis cumque
                     nulla.</p>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam omnis maxime vitae est aliquam ipsum
@@ -72,8 +73,18 @@
 
         <!-- Blog Tags & Share Section -->
         <section class="blog-tags-share  container">
-                <p><span>Tags:</span> Recipes, Chicken, Pineapple, Mexican</p>
-                <p><span>Share:</span><span><i class="fab fa-facebook-f"></i></span><span><i class="fab fa-twitter"></i></span><span><i class="fab fa-instagram"></i></span></p>
+            <div class="tags">
+                <h3>Tags:</h3>
+                <p>Recipes, Chicken, Pineapple, Mexican</p>
+            </div>
+            <div class="share">
+                <h3>Share:</h3>
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
         </section><!-- Blog Tags & Share Section ends-->
 
         <!-- Author Section -->
@@ -83,7 +94,7 @@
             </div>
             <div class="author-message">
                 <h3>Sally Lucas</h3>
-                <p>Beetroot spinach okra water Chestnut ricebean pae catsear courgette Summer purslane spinacharugula pea Tatsoi aubergine spring onion bush Tomato kale radicchio turnip chicory Salsify pea sprouts fava bean.
+                <p>Beetroot spinach okra water Chestnut ricebean pae catsear courgette Summer purslane spinacharugula pea Tatsoi aubergine spring onion bush Tomato kale radicchio turnip chicory pae catsear courgette Summer purslane spinacharugula pea Tatsoi aubergine spring onion bush Salsify pea sprouts fava bean.
             </div>
         </section><!-- Author Section ends-->
 
@@ -122,7 +133,7 @@
                     <img src="./delicious-assets/blog-6.jpeg" alt="">
                 </div>
                 <div class="comment-text">
-                    <h4>Lucatony Avaro - Web developer</h4>
+                    <h4>Lucatony Avaro <span>- Web developer</span></h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque sapiente deleniti omnis expedita numquam!</p>
                     <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
                 </div>
@@ -133,28 +144,27 @@
                     <img src="./delicious-assets/blog-7.jpeg" alt="">
                 </div>
                 <div class="comment-text">
-                    <h4>Brian Hudson - Web developer</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque sapiente deleniti omnis expedita
-                        numquam!</p>
+                    <h4>Brian Hudson <span>- Web developer</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque sapiente deleniti omnis expeditas numquam!</p>
                     <p>Posted at July 11, 2018 | by Admin | in Recipes</p>
                 </div>
             </div>
 
             <!-- Comment Form Section -->
-            <section class="comment">
+            <div class="comment">
                 <h3>Leave a comment</h3>
                 <p>Your email address will not be published. Required fileds are marked.</p>
 
                 <form action="">
                     <div class="top-inputs">
-                    <label for="name" class="visually-hidden">Name</label>
-                    <input type="text" id="name" placeholder="Name *" required>
+                        <label for="name" class="visually-hidden">Name</label>
+                        <input type="text" id="name" placeholder="Name *" required>
 
-                    <label for="email" class="visually-hidden">Email</label>
-                    <input type="email" id="email" placeholder="Email *" required>
+                        <label for="email" class="visually-hidden">Email</label>
+                        <input type="email" id="email" placeholder="Email *" required>
 
-                    <label for="website"  class="visually-hidden">Your Website</label>
-                    <input type="text" id="website" placeholder="Your Website">
+                        <label for="website"  class="visually-hidden">Your Website</label>
+                        <input type="text" id="website" placeholder="Your Website">
                     </div>
 
                     <label for="comment"  class="visually-hidden"></label>
@@ -162,7 +172,7 @@
 
                     <button type="submit">Submit Comment</button>
                 </form>
-            </section>
+            </div>
         </section><!-- Comments Section ends -->
         </div><!-- wrapper ends-->
 
