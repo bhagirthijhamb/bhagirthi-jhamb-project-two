@@ -635,6 +635,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* Height Media query for screens under 600px */
 }
 
 header h1, header h2 {
@@ -647,6 +648,12 @@ header h1, header h2 {
 header a {
   font-size: .6rem;
   font-weight: bold;
+}
+
+@media (max-height: 600px) {
+  header header {
+    height: auto;
+  }
 }
 
 .header-home {

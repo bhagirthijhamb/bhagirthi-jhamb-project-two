@@ -18,6 +18,13 @@ header {
         font-weight: bold;
     }
 
+    /* Height Media query for screens under 600px */
+    
+    @media (max-height: 600px) {
+        header {
+            height: auto;        
+        }
+    }
 }
 
 // Header for Home page
