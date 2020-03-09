@@ -11,22 +11,6 @@ h1 {
     min-height: 60vh;    
 }
 
-// .contact {
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;    
-// }
-
-// .contact-form {
-//     // flex: 1 1 65%;
-//     flex-basis: 65%;
-// }
-
-// aside {
-//     // flex: 1 1 35%
-//     flex-basis: 35%;
-// }
-
 .contact {
     display: grid;
     grid-template-columns: 2fr 1fr;

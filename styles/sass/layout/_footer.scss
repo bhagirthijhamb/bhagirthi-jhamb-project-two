@@ -93,56 +93,56 @@ footer {
     }
 
     .subscribe {
-            form {
-                border-bottom: 1px solid darken($color-white, 20%);
-                padding-bottom: .5rem;
-                display: flex;
-                flex-direction: row;
+        form {
+            border-bottom: 1px solid darken($color-white, 20%);
+            padding-bottom: .5rem;
+            display: flex;
+            flex-direction: row;
 
-                input {
-                    padding: .2rem .4rem;
-                    background-color: darken($color-brown-grey, 30%);
-                    color: darken($color-white, 20%);
+            input {
+                padding: .2rem .4rem;
+                background-color: darken($color-brown-grey, 30%);
+                color: darken($color-white, 20%);
 
-                    &::placeholder {
-                        font-size: .4rem;
-                    }
+                &::placeholder {
+                    font-size: .4rem;
                 }
-
-                button  {
-                    cursor: pointer;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    color: $color-white;
-                    background-color: $color-dark-green;
-
-                    i {
-                        color: $color-white;
-                    }
-                }            
             }
 
-            p {
-                border-bottom: none;
-            }
+            button  {
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                color: $color-white;
+                background-color: $color-dark-green;
 
-            .social-icons ul {
-                display: flex;
-                flex-direction: row;
-                margin-top: .4rem;
-
-                li {
-                    max-width: 1rem;
-                    flex: 0 0 2rem;
-                }           
-
-                a i {
+                i {
                     color: $color-white;
-                    font-size: .5rem;
                 }
+            }            
+        }
+
+        p {
+            border-bottom: none;
+        }
+
+        .social-icons ul {
+            display: flex;
+            flex-direction: row;
+            margin-top: .4rem;
+
+            li {
+                max-width: 1rem;
+                flex: 0 0 2rem;
+            }           
+
+            a i {
+                color: $color-white;
+                font-size: .5rem;
             }
         }
+    }
 }
 
     .legal {

@@ -1,5 +1,5 @@
 header {
-     background-position: 50% 50%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -15,10 +15,12 @@ header {
 
     a {
         font-size: .6rem;
+        font-weight: bold;
     }
 
 }
 
+// Header for Home page
 .header-home {    
     background-image: url('../delicious-assets/home-1.jpeg');
     min-height: 100vh;
@@ -28,6 +30,7 @@ header {
     }
 }
 
+// Header for Blog page
 .header-blog {
     background-image: url('../delicious-assets/blog-1.jpeg'); 
     min-height: 60vh; 
@@ -37,6 +40,7 @@ header {
     }
 }
 
+// Header for Contact page
 .header-contact {
     background-image: url('../delicious-assets/contact-1.jpeg'); 
     min-height: 60vh; 
@@ -50,7 +54,7 @@ header {
 // Navigation
 //-------------------------------------------------
 
-// Shopping Bag
+// Shopping Bag stylling
 
 .top-bar ul li:nth-child(8) a {
     position: relative;
@@ -73,9 +77,6 @@ header {
 }
 
 // ---------------------------------------------
-
-
-// Navigation
 
 nav {
     display: flex;

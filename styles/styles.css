@@ -646,6 +646,7 @@ header h1, header h2 {
 
 header a {
   font-size: .6rem;
+  font-weight: bold;
 }
 
 .header-home {

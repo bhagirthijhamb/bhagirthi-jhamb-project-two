@@ -52,6 +52,7 @@ $sixth-bp: 340px;
 // MIXINS
 //-----------------------------------------------
 
+// Underline the Heading
 @mixin heading-underline($width) {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
@@ -61,6 +62,7 @@ $sixth-bp: 340px;
     border-bottom: 3px solid $color-dark-green; /* This creates the border. Replace black with whatever color you want. */
 }
 
+// Centering the content
 @mixin align-center($max-width) {
     max-width: $max-width;
     display: flex;
@@ -69,11 +71,13 @@ $sixth-bp: 340px;
     margin: auto;
 }
 
+// Paragraph styling
 @mixin p-style() {
      font-size: .5rem;
     line-height: .8rem;
 }
 
+// For responsiveness
 @mixin respond($breakpoint) {
 
     @if $breakpoint == phone-land {

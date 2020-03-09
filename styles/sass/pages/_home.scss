@@ -78,7 +78,6 @@
             padding: 2rem 0;
     }
 
-
     ul {
         max-width: 22rem;
         display: flex;
@@ -95,9 +94,7 @@
         @media(max-width: $second-bp) {
             max-width: 31rem;
         }
-
-    }
-    
+    }    
 }
 
 .menu-list ul li {
@@ -112,8 +109,7 @@
     }
     .menu-item-details {
         h3 a {
-            font-size: .8rem;
-            
+            font-size: .8rem;            
         }
 
         h3 {
@@ -126,6 +122,7 @@
         }
     }    
 }
+
 // ----------------------------------------
 // Our Restaurant Section
 //-----------------------------------------
@@ -242,7 +239,6 @@
         &:first-child {
             color: darken($color-white, 2%)
         }
-    }
-    
+    }    
 }
 

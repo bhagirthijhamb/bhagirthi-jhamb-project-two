@@ -8,9 +8,7 @@
             p:nth-of-type(1) {
             font-weight: bold;
         }
-    }
-
-       
+    }       
 }
 
     .blog-recipe,
@@ -27,8 +25,7 @@
         .tags {
             p {
                 display: inline;
-            }
-    
+            }    
         }
 
         .share {
@@ -69,8 +66,7 @@
     }
 }
 
-.related-posts {  
-    
+.related-posts {     
     padding: 1rem 0;
     
     .posts {
@@ -91,8 +87,7 @@
         .post-3 {
             @media (max-width: $third-bp){
                 margin-bottom: 1rem;
-            }
-            
+            }            
         }
 
         .post-2 {
@@ -139,9 +134,7 @@
         .comment-text h4,
         .comment-text p {
             margin: 0;
-        }
-
-        
+        }        
     }
 
     .bubble {
@@ -161,7 +154,6 @@
                 border-top: 8px solid transparent;
                 border-bottom: 8px solid transparent;
                 border-right: 15px solid darken($color-white, 2%);
-
            }
         }
 
